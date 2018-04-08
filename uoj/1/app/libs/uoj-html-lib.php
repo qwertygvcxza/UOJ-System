@@ -645,15 +645,12 @@ class JudgementDetailsPrinter {
 			}
 		} elseif ($node->nodeName == 'in') {
 			echo "<h4>input:</h4><pre>\n";
-			$this->_print_c($node);
 			echo "\n</pre>";
 		} elseif ($node->nodeName == 'out') {
 			echo "<h4>output:</h4><pre>\n";
-			$this->_print_c($node);
 			echo "\n</pre>";
 		} elseif ($node->nodeName == 'res') {
 			echo "<h4>result:</h4><pre>\n";
-			$this->_print_c($node);
 			echo "\n</pre>";
 		} else {
 			echo '<', $node->nodeName;
